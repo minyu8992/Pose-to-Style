@@ -45,7 +45,7 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
   - Batch size = 1
   - Image size = 256
 - Styles trained: scream, prismas, fur, mermaid, wukon, pop, sketch
-  <img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="50"/>
+  <img src="style.png" height="300"/>
 
 ---
 
