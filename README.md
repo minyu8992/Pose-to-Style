@@ -9,7 +9,7 @@ This project detects **human pose keypoints** from camera input, recognizes the 
 - Normalize keypoint coordinates for robust pose recognition  
 - Match user poses with standard poses via **MSE loss** (with masking to focus on important joints)  
 - Apply **FastStyleNet** for real-time style transfer  
-- Support **7 artistic styles**: scream, prismas, fur, mermaid, wukon, pop, sketch 
+- Support 7 artistic styles: **scream, prismas, fur, mermaid, wukon, pop, sketch**
 
 ---
 
@@ -23,11 +23,13 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
 - Model: **trt_pose** (NVIDIA official pretrained model)  
 - Backbone: **ResNet18** 
 - Detects 18 human body keypoints  
-- Normalization ensures poses are comparable regardless of position in frame  
-- Pose recognition via MSE loss against predefined standard poses
-- Loss focuses more on **hands/legs** using masking
+- Normalization ensures poses are comparable regardless of position in frame
+<img src="https://drive.google.com/uc?export=view&id=1jPQIQNp5nbaV6BCZ-SwmgeLxgnW8Nebs" height="400"/>
 
----
+- Pose recognition via MSE loss against predefined standard poses
+<img src="https://drive.google.com/uc?export=view&id=15sPvXDLNOYewFDYQCRp6IUPfMZM6OnGh" height="300"/>
+
+- Loss focuses more on **hands/legs** using masking
 
 ### (2) Style Transfer
 - Model: **FastStyleNet**  
@@ -39,9 +41,10 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
   - Epochs = 2
   - Batch size = 1
   - Image size = 256
-- Styles trained: scream, prismas, fur, mermaid, wukon, pop, sketch
-- Results:  
+<img src="https://drive.google.com/uc?export=view&id=1K16slzLKn-Hg6hqWuf_XdzhG0zd_X4m6" height="200"/>
 
+- Styles trained: scream, prismas, fur, mermaid, wukon, pop, sketch
+<img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="400"/>
 
 ---
 
@@ -53,4 +56,4 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
 ---
 
 ## 5. Demo
-
+<img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="200"/>
