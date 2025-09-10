@@ -18,4 +18,39 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
 
 ---
 
-## 3. 
+## 3. Models
+### (1) Pose Detection
+- Model: **trt_pose** (NVIDIA official pretrained model)  
+- Backbone: **ResNet18** 
+- Detects 18 human body keypoints  
+- Normalization ensures poses are comparable regardless of position in frame  
+- Pose recognition via MSE loss against predefined standard poses
+- Loss focuses more on **hands/legs** using masking
+
+---
+
+### (2) Style Transfer
+- Model: **FastStyleNet**  
+- Dataset: MS COCO + chosen style image  
+- Loss functions: 
+  - **Content Loss**: Difference between transformed image & original input  
+  - **Style Loss**: Difference between transformed image & style image (via Gram matrix)
+- Training settings:
+  - Epochs = 2
+  - Batch size = 1
+  - Image size = 256
+- Styles trained: scream, prismas, fur, mermaid, wukon, pop, sketch
+- Results:  
+
+
+---
+
+## 4. Deployment on Xavier
+- Models deployed: **trt_pose + FastStyleNet**  
+- Issue: Real-time performance was slow due to large image size  
+- Solution: Resize input image to 50% to speed up inference  
+
+---
+
+## 5. Demo
+
