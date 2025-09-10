@@ -24,16 +24,18 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
 - Backbone: **ResNet18** 
 - Detects 18 human body keypoints  
 - Normalization ensures poses are comparable regardless of position in frame
-<img src="https://drive.google.com/uc?export=view&id=1jPQIQNp5nbaV6BCZ-SwmgeLxgnW8Nebs" height="400"/>
+<img src="https://drive.google.com/uc?export=view&id=1jPQIQNp5nbaV6BCZ-SwmgeLxgnW8Nebs" height="350"/>
 
 - Pose recognition via MSE loss against predefined standard poses
-<img src="https://drive.google.com/uc?export=view&id=15sPvXDLNOYewFDYQCRp6IUPfMZM6OnGh" height="300"/>
+<img src="https://drive.google.com/uc?export=view&id=15sPvXDLNOYewFDYQCRp6IUPfMZM6OnGh" height="250"/>
 
 - Loss focuses more on **hands/legs** using masking
 
 ### (2) Style Transfer
 - Model: **FastStyleNet**  
-- Dataset: MS COCO + chosen style image  
+- Dataset: MS COCO + chosen style image
+<img src="https://drive.google.com/uc?export=view&id=1K16slzLKn-Hg6hqWuf_XdzhG0zd_X4m6" height="250"/>
+
 - Loss functions: 
   - **Content Loss**: Difference between transformed image & original input  
   - **Style Loss**: Difference between transformed image & style image (via Gram matrix)
@@ -41,10 +43,8 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
   - Epochs = 2
   - Batch size = 1
   - Image size = 256
-<img src="https://drive.google.com/uc?export=view&id=1K16slzLKn-Hg6hqWuf_XdzhG0zd_X4m6" height="200"/>
-
 - Styles trained: scream, prismas, fur, mermaid, wukon, pop, sketch
-<img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="400"/>
+<img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="350"/>
 
 ---
 
@@ -56,4 +56,4 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
 ---
 
 ## 5. Demo
-<img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="200"/>
+<img src="https://drive.google.com/uc?export=view&id=1quyCwK90TwHG4OCdQP9HQx5vkbEUuiKv" height="200"/>
