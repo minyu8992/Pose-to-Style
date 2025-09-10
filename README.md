@@ -34,6 +34,7 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
 ### (2) Style Transfer
 - Model: **FastStyleNet**  
 - Dataset: MS COCO + chosen style image
+  
   <img src="https://drive.google.com/uc?export=view&id=1K16slzLKn-Hg6hqWuf_XdzhG0zd_X4m6" height="250"/>
 
 - Loss functions: 
@@ -44,7 +45,7 @@ Camera → Pose Detection (trt_pose) → Keypoint Normalization → Pose Recogni
   - Batch size = 1
   - Image size = 256
 - Styles trained: scream, prismas, fur, mermaid, wukon, pop, sketch
-  <img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="350"/>
+  <img src="https://drive.google.com/uc?export=view&id=1o7mZw7EMM49vFwRVLPWxHMxUVVFBYGnU" height="50"/>
 
 ---
 
